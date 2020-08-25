@@ -1,0 +1,249 @@
+*{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+h4 {
+  color: white;
+}
+
+brand-logo {
+  margin-right: 10px;
+}
+
+
+#recipe-section {
+  color: white;
+  font-size: 20px;
+  padding-left: 5vw;
+  padding-top: 14px;
+  position: relative;
+  right: 2em;
+  top: .5em;
+  margin-top: -10rem !important;
+  border-radius: 20px;
+  /* width: 75%; */
+}
+#recipe-box {
+  background-color: grey;
+  border-radius: 20px;
+  margin-left: 33.3%;
+  margin-bottom: 30px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: green;
+  /* clear: none; */
+  z-index: 100;
+}
+.text-muted-footer {
+  margin-top: 1px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: green;
+}
+
+.two-toned-footer-color {
+  height: 7px;
+  width: 100%;
+  background-color: lightgreen;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: darkgreen;
+}
+
+.btn {
+  border-radius: 20px !important;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#welcome-page {
+  background-image: url(./bg2.jpg);
+  object-fit: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+}
+
+#index-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+#searchBtn {
+  border-radius: 20px;
+  background-color: green;
+  /* position: fixed; */
+  margin-bottom: .5em;
+}
+
+#startBtn {
+  border-radius: 20px;
+  height: 6rem;
+  padding-top: 1rem;
+  font-size: 5rem;
+  margin-top: 18rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.262);
+  color: white;
+}
+
+
+.card-block {
+  min-height: 725px;
+  max-height: 725px;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.ingredients {
+  height: 8rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-bottom: grey;
+}
+
+.card-image {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.recipe-image {
+  margin-top: 5px;
+  border-radius: 20px !important;
+  /* border-top-left-radius: 20px !important;
+  border-top-right-radius: 20px !important; */
+}
+
+#contact-form{
+  background-color: grey !important;
+  border-radius: 20px;
+  padding: 2em;
+  padding-top: 0;
+  margin-top: 30px;
+  width: 70%;
+  color: white;
+}
+
+hr {
+  box-sizing: border-box !important;
+  opacity: 0.3 !important;
+}
+
+.groceryDiv {
+  background-color: grey !important;
+  border-radius: 20px;
+  padding: 2em;
+  padding-top: 0;
+  margin-top: 30px;
+  width: 70%;
+}
+
+.card {
+  border-radius: 20px;
+  transition: .4s;
+}
+
+.card:hover {
+  transform: scale(1.05) translate(-3px, -5px);
+  box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.75);
+}
+
+
+#timeHandle {
+  width: auto;
+  height: 1.6em;
+  top: 50%;
+  margin-top: -.8em;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.ui-accordion-content {
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+  line-height: 2em !important;
+  /* This isn't working for some reason */
+  list-style-type: disc !important;
+}
+
+input:focus+label {
+  color: #4CAF50 !important;
+}
+input:focus {
+  border-bottom-color: black !important;
+}
+
+.input-field
+.prefix.active {
+  color: #4CAF50 !important;
+}
+
+.ui-accordion-content-active {
+  min-height: 150px;
+}
+@media (max-width:768px) {
+  img {
+    width:70%;
+ 
+  }
+}

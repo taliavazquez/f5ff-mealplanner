@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact the Fab 5</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Materialize icons Link -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Fontawesome Link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+  <!-- jQuery UI CSS Link -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <!-- Local CSS file -->
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+
+<body id="welcome-page">
+  <nav>
+    <div class="nav-wrapper green">
+
+      <a href="./planner.html" class="brand-logo right">F5FF</a>
+      <ul class="left">
+
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons "></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Dropdown Trigger -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="./contact.html"><i class="material-icons"></i>Contact</a></li>
+    <li><a href="./planner.html"><i class="material-icons"></i>Planner</a></li>
+    <li><a href="./groclist.html"><i class="material-icons"></i>Grocery</a></li>
+  </ul>
+  <div class="container" id="contact-form">
+    <div class="row">
+      <!-- Put this in the form tag action="mailto:nicholaskonzen@gmail.com" method="post" enctype="text/plain" -->
+      <form class="col s12" action="https://submit.jotform.com/submit/202275324030037/" method="post"
+        name="form_202275324030037" id="202275324030037" accept-charset="utf-8" autocomplete="on">
+        <div class="row">
+          <h3>Contact Us</h3>
+        </div>
+
+        <div class="input-field col s6">
+
+          <i class="material-icons prefix">account_circle</i>
+
+          <input id="nameInput" name="q4_name[first]" type="text" class="form-textbox validate[required] validate"
+            size="10" value="" data-component="first" aria-labelledby="nameLabel" required="">
+
+          <label for="nameInput" id='nameLabel'>Name</label>
+
+        </div>
+
+        <div class="input-field col s6">
+
+          <i class="material-icons prefix">email</i>
+
+          <input id="emailInput" type="email" name="q5_email" class="form-textbox validate[required, Email] validate"
+            size="30" value="" data-component="email" aria-labelledby="inputLabel" required="">
+
+          <label for="emailInput" id='inputLabel'>Email</label>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="input-field col s12">
+
+        <i class="material-icons prefix">chat</i>
+
+        <input id="messageInput" type="text" class="form-textarea validate[required] validate" name="q6_sendUs"
+          cols="40" rows="6" data-component="textarea" required="" aria-labelledby="messageLabel">
+
+        <label for="messageInput" id='messageLabel'>Send us a message</label>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+      <input type="text" id="satisfactionInput" name="q8_satisfaction" data-type="input-textbox" class="hide" size="20"
+        value="" data-component="textbox" />
+    </div>
+    <div class="row center">
+
+      <div class="col s4">
+        <a class="btn-floating btn-large waves-effect waves-light red mood" data-mood='dissatisfied'><i
+            class="material-icons">sentiment_dissatisfied</i></a>
+      </div>
+
+      <div class="col s4">
+        <a class="btn-floating btn-large waves-effect waves-light yellow mood" data-mood='neutral'><i
+            class="material-icons grey-text">sentiment_neutral</i></a>
+      </div>
+
+      <div class="col s4">
+        <a class="btn-floating btn-large waves-effect waves-light green mood" data-mood='satisfied '><i
+            class="material-icons">sentiment_satisfied</i></a>
+      </div>
+
+    </div>
+    <p class="center-align">
+      <button class='btn green'>Submit<i class="material-icons right">send</i></button>
+    </p>
+    </form>
+  </div>
+
+
+
+  <section id="popup" title='Thank you!'>
+    <h5>Before we submit your feedback, please check your information below for accuracy</h5>
+    <p>Your Name: <span id='nameSpan'></span></p>
+    <p>Your Email: <span id='emailSpan'></span></p>
+    <p>Your Message: <span id='messageSpan'></span></p>
+  </section>
+
+
+
+  <!--insert footer from index-->
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright 2020 F5FF
+    </p>
+  </footer>
+
+  <!-- Materialize.js link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- jQuery Script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+  <!-- Jquery UI.js Link -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+  <!-- Local javascript file -->
+  <script src="../assets/contact.js"></script>
+</body>
+
+</html>

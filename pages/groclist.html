@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Grocery List</title>
+
+    <!-- Materialize.css Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- Our own CSS stylesheet -->
+    <!-- added stylesheet Aug. 13 2:52pm talia -->
+    <link rel="stylesheet" href="../assets/style.css" media="screen" />
+</head>
+
+<body id="welcome-page">
+    <nav>
+        <div class="nav-wrapper green">
+    
+          <a href="./planner.html" class="brand-logo right">F5FF</a>
+          <ul class="left">
+    
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons "></i></a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Dropdown Trigger -->
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="./contact.html"><i class="material-icons"></i>Contact</a></li>
+        <li><a href="./planner.html"><i class="material-icons"></i>Planner</a></li>
+        <li><a href="#!"><i class="material-icons"></i>Grocery</a></li>
+      </ul>
+
+    <!--insert nav from index.html-->
+
+    <main class="container">
+        <div class="row groceryDiv">
+            <!--main section of the grocery list-->
+            <section class="col" style='width: 100%; text-align: center'>
+                <!--using h1 for now, not permenant if need be-->
+                <h1>Grocery List</h1>
+                <form id="groc-list" style='width: 70%; margin: 0 auto'>
+                    <!--start with 3 items. use the add button to dynamically add additional list-items-->
+                    <!--an individual grocery item-->
+                    <div class="row list-item valign-wrapper">
+                        <label class='col s1'>
+                            <input type="checkbox"></input>
+                            <span></span>
+                        </label>
+                        <input type='text' placeholder='Grocery Item' class='col s10 offset-s1'></input>
+                    </div>
+                    <div class="row list-item valign-wrapper">
+                        <label class='col s1'>
+                            <input type="checkbox"></input>
+                            <span></span>
+                        </label>
+                        <input type='text' placeholder='Grocery Item' class='col s10 offset-s1'></input>
+                    </div>
+                    <div class="row list-item valign-wrapper">
+                        <label class='col s1'>
+                            <input type="checkbox"></input>
+                            <span></span>
+                        </label>
+                        <input type='text' placeholder='Grocery Item' class='col s10 offset-s1'></input>
+                    </div>
+                </form>
+                <div class="row">
+                    <!--use the id "add-list-item" to dynamically create a new list item-->
+                    <button class="btn green" id="add-list-item" onClick="addListItem({grocText: '', isChecked: false})">Add an Item</button>
+                    <!--button that removes all of the checked items-->
+                    <button class="btn green" id="clear-check-items" onClick="clearChecks()">Remove Checks</button>
+                    <!--save button for list-->
+                    <button class="btn green" id="save-list" onClick="saveList()">Save List</button>
+                </div>
+            </section>
+            <!--aside section that list nearby stores with delivery-->
+            <!--<aside class="col sidenav">
+                <h2>Stores that Deliver</h2>
+            </aside>-->
+        </div>
+    </main>
+
+    <!--insert sticky footer from index.html-->
+    <!-- added footer Aug. 13 2:26pm talia -->
+    <footer class="footer">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">
+        &copy; Copyright 2020 F5FF
+        </p>
+    </footer>
+
+    <!-- jQuery Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <!-- Jquery UI.js Link -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--adding the JS for this specific file-->
+    <script src="../assets/groclist.js"></script>
+</body>
+
+</html>

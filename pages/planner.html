@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Meal Planner</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Fontawesome Link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <!-- jQuery UI CSS Link -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- Materialize.css Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Local CSS File -->
+  <link rel="stylesheet" href="../assets/style.css">
+
+</head>
+
+<body id="welcome-page">
+  <nav>
+    <div class="nav-wrapper green">
+
+      <a href="./planner.html" class="brand-logo right">F5FF</a>
+      <ul class="left">
+
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu<i class="material-icons "></i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Dropdown Trigger -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="./contact.html"><i class="material-icons"></i>Contact</a></li>
+    <li><a href="#!"><i class="material-icons"></i>Planner</a></li>
+    <li><a href="./groclist.html"><i class="material-icons"></i>Grocery</a></li>
+  </ul>
+
+  <main class="container">
+
+    <div class="row" data-day='Monday'>
+      <h4>
+        Monday
+        <span id='monDate' class='dateDisplay'>(MM/DD/YYYY)</span>
+      </h4>
+
+
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Breakfast</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green jumpBtn'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Lunch</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monLunch">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Dinner</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monDin">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" data-day='Tuesday'>
+      <div>
+        <h4>
+          Tuesday
+          <span id='tuesDate' class='dateDisplay'>(MM/DD/YYYY)</span>
+        </h4>
+
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Breakfast</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Lunch</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Dinner</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients
+                </p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" data-day='Wednesday'>
+      <div>
+        <h4>
+          Wednesday
+          <span id='wedDate' class='dateDisplay'>(MM/DD/YYYY)</span>
+        </h4>
+
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Breakfast</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Lunch</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Dinner</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" data-day='Thursday'>
+      <div>
+        <h4>
+          Thursday
+          <span id='thursDate' class='dateDisplay'>(MM/DD/YYYY)</span>
+        </h4>
+
+
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Breakfast</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Lunch</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Dinner</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" data-day='Friday'>
+      <div>
+        <h4>
+          Friday
+          <span id='friDate' class='dateDisplay'>(MM/DD/YYYY)</span>
+        </h4>
+
+
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Breakfast</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Lunch</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Dinner</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p class='btn green' style='margin-bottom: 1em'>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" data-day='Saturday'>
+      <div>
+        <h4>
+          Saturday
+          <span id='satDate' class='dateDisplay'>(MM/DD/YYYY)</span>
+        </h4>
+
+
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Breakfast</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Lunch</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Dinner</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" data-day='Sunday'>
+      <div>
+
+
+        <h4>
+          Sunday
+          <span id='sunDate' class='dateDisplay'>(MM/DD/YYYY)</span>
+        </h4>
+
+
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Breakfast</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Lunch</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s2 m4">
+        <div class="card grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Dinner</span>
+            <div class='mealPlaceholder'>
+              <a href='#recipe-search' class='btn green'>Find a Meal</a>
+            </div>
+            <div class='hide mealContent'>
+              <h6 class='timeDisplay'>12:00 PM</h6>
+              <p id="monBreak">
+                <a class='btn green' style='margin-bottom: 1em'>Recipe Link</a>
+              <div class='ingredientsList'>
+                <p>Ingredients</p>
+                <ul>
+                </ul>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end of calender-->
+
+    <div id='chooseWhenDialog' title='Schedule This Recipe'>
+      <h5>Choose what day you want to prepare this recipe:</h5>
+      <form>
+        <div class="input-field">
+          <select id='daySelect'>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+        </div>
+        <div id='dialogBottom'>
+          <h5>Choose what time you want to have this recipe:</h5>
+          <div id='timeSlider'>
+            <div id='timeHandle' class='ui-slider-handle'></div>
+          </div>
+          <h5>Which meal do you want to have this recipe for?</h5>
+          <p>
+            <label>
+              <input name="whichMeal" type="radio" checked />
+              <span>Breakfast</span>
+            </label>
+            <label>
+              <input name="whichMeal" type="radio" />
+              <span>Lunch</span>
+            </label>
+            <label>
+              <input name="whichMeal" type="radio" />
+              <span>Dinner</span>
+            </label>
+          </p>
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+  <div class="row">
+
+    <section class="form-group col s4" id="recipe-box">
+      <label for="search" id="recipe-section">Recipe Search:</label>
+      <input type="text" class="form-control" id="recipe-search"><button class="btn green waves-effect waves-light"
+        id="searchBtn">Search</button>
+    </section>
+  </div>
+
+  <div class="row">
+    <section id="recipe-cards">
+
+    </section>
+  </div>
+  <!--insert sticky footer from index.html-->
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright 2020 F5FF
+    </p>
+  </footer>
+
+  <!-- jQuery Script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- Materialize.js Link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- jQuery UI Link -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <!-- Moment.js Link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <!-- Local JS Link -->
+  <script src="../assets/planner.js"></script>
+</body>
+
+</html>
