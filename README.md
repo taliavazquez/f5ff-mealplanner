@@ -12,9 +12,9 @@
 
 ## Description
 
-The Fab Five's Fantastic Foods is our first project for our UCSD Extention Full Stack Boot-camp. The assignment was to create something people needed, using third-party and server-side API's, a CSS framwork, and user interaction. We settled on a meal planner because we ourselves were in need of one. This project was put together in a short 2 weeks. Ane we are ultimately proud of our work.
+The Fab Five's Fantastic Foods is our first project for our UCSD Extension Full Stack Boot-camp. The assignment was to create something people needed, using third-party and server-side API's, a CSS framework, and user interaction. We settled on a meal planner because we ourselves were in need of one. This project was put together in a short 2 weeks. And we are ultimately proud of our work.
 
-This is a meal planner that not only helps you keep track of breakfast, lunch, and dinner. But it also let's you search for recipes to add to your schedule, and has an interactive grocery list. We also have a contact page to report any issues or ask for help.
+This is a meal planner that not only helps you keep track of breakfast, lunch, and dinner. But it also lets you search for recipes to add to your schedule, and has an interactive grocery list. We also have a contact page to report any issues or ask for help.
 
 [Meal Planner deployed link](https://tbsanders5.github.io/mealplanner/)
 
@@ -28,13 +28,13 @@ This is a meal planner that not only helps you keep track of breakfast, lunch, a
 
 ## Usage
 
-When you first enter the meal planner, click "Lets Get Started!" to go to the actual page.
+When you first enter the meal planner, click "Let's Get Started!" to go to the actual page.
 
-When you get to the planner page, scroll to the bottom and search a recipe, you will have many options to choose from, you can then add them to the planner by selecting that day of the week, meal, and time. When you scroll back up you will see your changes. You can then click on the Recipe Link to be taken to the website hosting your recipe, or you can click on the Ingredients dropdown to see what ingredients you will need and how much.
+When you get to the planner page, scroll to the bottom and search a recipe, you will have many options to choose from, you can then add them to the planner by selecting that day of the week, meal and time. When you scroll back up you will see your changes. You can then click on the Recipe Link to be taken to the website hosting your recipe, or you can click on the Ingredients dropdown to see what ingredients and how much you will need.
 
-On the Grocery List page, you can create a grocery list based off of your meals, which will remember all your entires session to session. "Add an Item" to... add an item, check things you bought (or changed your mind about) and click "Remove Checks" to remove them, and finally, "Save List" to save all of your changes. Reload the page and all your entries will be there!
+On the Grocery List page, you can create a grocery list based off of your meals. "Add an Item" to... add an item, check things you bought (or changed your mind about) and click "Remove Checks" to remove them, and finally, "Save List" to save all of your changes. Reload the page and all your entree will show up.
 
-On the Contact page, you can reach out to us to help with the application. Fill out your name, Email, message, and a little emoji displaying your feelings. Hit "Submit" to send your message to a special email for the application.
+On the Contact page, you can reach out to us to help with the application. Fill out your name, email, message, and a leave your feedback. Hit "Submit" to send your message to a special email for the application.
 
 ## Tests
 
